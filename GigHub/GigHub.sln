@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GigHub", "GigHub\GigHub.csproj", "{ED7E8675-1ECF-43C9-B30C-CCB8417CEF5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED7E8675-1ECF-43C9-B30C-CCB8417CEF5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7E8675-1ECF-43C9-B30C-CCB8417CEF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7E8675-1ECF-43C9-B30C-CCB8417CEF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7E8675-1ECF-43C9-B30C-CCB8417CEF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51305694-F394-4526-A7B8-95B7AD6CEA01}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://maruakpor.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GigHub\\GigHub.csproj
+		SccProjectName1 = GigHub
+		SccLocalPath1 = GigHub
+	EndGlobalSection
+EndGlobal
