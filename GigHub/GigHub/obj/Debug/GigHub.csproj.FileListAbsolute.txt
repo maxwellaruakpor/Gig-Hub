@@ -82,3 +82,4 @@ D:\MVC WORKS\GigHub\GigHub\bin\System.Web.Http.WebHost.dll
 D:\MVC WORKS\GigHub\GigHub\bin\System.Net.Http.Formatting.xml
 D:\MVC WORKS\GigHub\GigHub\bin\System.Web.Http.xml
 D:\MVC WORKS\GigHub\GigHub\bin\System.Web.Http.WebHost.xml
+D:\MVC WORKS\GigHub\GigHub\obj\Debug\GigHub.Migrations.NewDbase.resources

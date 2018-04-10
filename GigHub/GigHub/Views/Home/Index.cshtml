@@ -2,31 +2,77 @@
 @{
     ViewBag.Title = "Home Page";
 }
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-xs-12 col-md-6">
+            <ul class="gigs">
+                @foreach (var gig in Model)
+                {
+                    <li>
+                        <div class="date">
+                            <div class="month">
+                                @gig.DateTime.ToString("MMM")
+                            </div>
+                            <div class="day">
+                                @gig.DateTime.ToString("d ")
+                            </div>
+                        </div>
+                        <div class="details">
+                            <span class="artist">
+                                @gig.Artist.Name <button class="btn btn-link btn-sm js-toggle-follow" data-user-id="@gig.ArtistId">Follow</button>
+                            </span>
+                            <span class="genre">
+                                @gig.Genre.Name
+                            </span>
+                            <button data-gig-id="@gig.Id" class="btn btn-default btn-sm pull-right js-toggle-attendance">Going?</button>
 
-<ul class="gigs">
-    @foreach(var gig in Model)
+                        </div>
+
+                    </li>
+                }
+
+            </ul>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <img class="img-responsive" src="~/Images/artist_1.jpg" />
+        </div>
+    </div>
+</div>
+
+
+@section scripts 
     {
-        <li>
-            <div class="date">
-                <div class="month">
-                    @gig.DateTime.ToString("MMM")
-                </div>
-                <div class="day">
-                    @gig.DateTime.ToString("d ")
-                </div>
-            </div>
-            <div class="details">
-                <span class="artist">
-                   @gig.Artist.Name
-                </span>
-                <span class="genre">
-                    @gig.Genre.Name
-                </span>
-                <button class="btn btn-default btn-sm pull-right">Going ?</button>
-               
-            </div>
-            
-        </li>
-    }
+    <script>
+        $(document).ready(function () {
+            $(".js-toggle-attendance").click(function (e) {
+                var button = $(e.target);
+                $.post("/api/attendances", { gigId: button.attr("data-gig-id") })
+                    .done(function () {
+                        button
+                            .removeClass("btn-default")
+                            .addClass("btn-info")
+                            .text("Going");
+                    })
+                    .fail(function () {
+                        alert("Something Failed");
+                    });
+            });
+        });
 
-</ul>
+        $(document).ready(function () {
+            $(".js-toggle-follow").click(function (e) {
+                var button = $(e.target);
+                $.post("/api/followings", { gigId: button.attr("data-user-id") })
+                    .done(function () {
+                        button
+                            .text("following");
+                    })
+                    .fail(function () {
+                        alert("Something Failed");
+                    });
+            });
+        });
+
+    </script>
+}
