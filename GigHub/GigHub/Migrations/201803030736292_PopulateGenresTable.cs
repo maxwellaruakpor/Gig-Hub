@@ -10,11 +10,12 @@ namespace GigHub.Migrations
             Sql("INSERT INTO Genres (Id, Name)  VALUES (2, 'Blues')");
             Sql("INSERT INTO Genres (Id, Name)  VALUES (3, 'Rock')");
             Sql("INSERT INTO Genres (Id, Name)  VALUES (4, 'Country')");
+            Sql("INSERT INTO Genres (Id, Name)  VALUES (5, 'Gospel/Urban')");
         }
         
         public override void Down()
         {
-            Sql("DELETE FROM Genres WHERE Id IN (1, 2, 3, 4) ");
+            Sql("DELETE FROM Genres WHERE Id IN (1, 2, 3, 4, 5) ");
         }
     }
 }

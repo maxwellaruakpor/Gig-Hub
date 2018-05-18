@@ -206,6 +206,10 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\FollowingsController.cs" />
+    <Compile Include="Migrations\201805181519507_PopulateGenersTable.cs" />
+    <Compile Include="Migrations\201805181519507_PopulateGenersTable.Designer.cs">
+      <DependentUpon>201805181519507_PopulateGenersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\GigsViewModel.cs" />
     <Compile Include="Dtos\AttendanceDto.cs" />
     <Compile Include="Controllers\GigController.cs" />
@@ -318,7 +322,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Gigs\Create.cshtml" />
+    <Content Include="Views\Gig\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -359,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804100128374_NewDbase.resx">
       <DependentUpon>201804100128374_NewDbase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805181519507_PopulateGenersTable.resx">
+      <DependentUpon>201805181519507_PopulateGenersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

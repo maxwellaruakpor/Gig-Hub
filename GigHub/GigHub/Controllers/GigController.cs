@@ -35,7 +35,7 @@ namespace GigHub.Controllers
                 ShowActions = User.Identity.IsAuthenticated
             };
 
-            return View("Gigs", viewModel);
+            return View(viewModel);
         }
         // GET: Gig
         public ActionResult Create()
