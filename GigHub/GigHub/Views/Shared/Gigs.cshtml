@@ -1,4 +1,4 @@
-﻿@model GigHub.ViewModels.HomeViewModel
+﻿@model GigHub.ViewModels.GigsViewModel
 @{
     ViewBag.Title = "Home Page";
 }
@@ -23,7 +23,7 @@
 
                                 @if (Model.ShowActions)
         {
-                        <button class="btn btn-link btn-sm js-toggle-follow" data-user-id="@gig.ArtistId">Follow</button>
+                                 <button class="btn btn-link btn-sm js-toggle-follow" data-user-id="@gig.ArtistId">Follow</button>
 }
                             </span>
                             <span class="genre">

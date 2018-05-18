@@ -73,7 +73,6 @@ D:\MVC WORKS\GigHub\GigHub\obj\Debug\GigHub.csproj.GenerateResource.Cache
 D:\MVC WORKS\GigHub\GigHub\obj\Debug\GigHub.Migrations.PopulateGenresTable.resources
 D:\MVC WORKS\GigHub\GigHub\obj\Debug\GigHub.Migrations.SomeThing.resources
 D:\MVC WORKS\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddForeignKeyPropertiesToGig.resources
-D:\MVC WORKS\GigHub\GigHub\obj\Debug\GigHub.csprojResolveAssemblyReference.cache
 D:\MVC WORKS\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddNameToApplicationUser.resources
 D:\MVC WORKS\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddAttendance.resources
 D:\MVC WORKS\GigHub\GigHub\bin\System.Net.Http.Formatting.dll

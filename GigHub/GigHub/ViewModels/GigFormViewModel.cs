@@ -1,10 +1,9 @@
 ﻿using GigHub.Models;
-using GigHub.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace GigHub.ViewModel
+namespace GigHub.ViewModels
 {
     public class GigFormViewModel
     {
